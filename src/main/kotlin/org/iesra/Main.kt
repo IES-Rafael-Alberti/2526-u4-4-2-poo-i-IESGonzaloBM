@@ -80,7 +80,7 @@ class Coche(var color: String?, val marca: String, val modelo: String, val numCa
 
 
 
-fun main(arg: Array<String>)
+fun main()
 {
     // Ejercicio 4.1
     val rectangulo: Rectangulo = Rectangulo(1.2, 3.5)
@@ -88,10 +88,11 @@ fun main(arg: Array<String>)
     println(rectangulo.area())
     println(rectangulo.perimetro())
 
+    var input = readln()
 
     // Ejercicio 4.2
     val persona1: Persona = Persona(50.0, 1.7)
-    if (arg[0].isEmpty()) persona1.nombre = arg[0]
+    if (input.isEmpty()) persona1.nombre = input
     println("Persona1: ${persona1.nombre}, ${persona1.peso}, ${persona1.altura}")
 
     val persona2: Persona = Persona(65.0, 1.9)
